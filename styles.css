@@ -1,0 +1,117 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f0f9;
+}
+
+/* Header */
+header {
+    background-color: #8d6e63;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header ul li a:hover {
+    color: #d7ccc8;
+}
+
+/* Welcome Section */
+.welcome-section {
+    background-color: #fff3e0;
+    padding: 50px;
+    margin: 50px auto;
+    max-width: 800px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.welcome-image {
+    width: 100%;
+    max-width: 600px; /* Controls max size of the image */
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Optional rounded corners for a smoother look */
+}
+
+/* Block Styling */
+.block {
+    background-color: #fff3e0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Specific Image Style for Bird Image */
+.bird-image {
+    width: 100%;
+    max-width: 400px; /* Limit the size of the bird image */
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .welcome-section h1 {
+        font-size: 2rem;
+    }
+
+    .welcome-section p {
+        font-size: 1rem;
+    }
+
+    .block h2 {
+        font-size: 1.8rem;
+    }
+
+    .block p {
+        font-size: 1rem;
+    }
+
+    .bird-image {
+        max-width: 100%; /* Ensures the bird image resizes on smaller screens */
+    }
+}
+
+/* Social Buttons Styling */
+.social-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-buttons a img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.social-buttons a img:hover {
+    transform: scale(1.1);
+}
